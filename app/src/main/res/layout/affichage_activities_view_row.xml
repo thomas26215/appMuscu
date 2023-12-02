@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <ImageView
+        android:id="@+id/iv_case_image_from_list_exercises_in_session"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/case_image_of_exercise_in_list_exercises"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_nom_exercise_from_list_exercises_in_session"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="31dp"
+        android:layout_toEndOf="@+id/iv_case_image_from_list_exercises_in_session"
+        android:fontFamily="@font/inter_bold"
+        android:text="Nom exercice"
+        android:textColor="@color/black_semi_transparent"
+        android:textSize="20dp" />
+
+    <View
+        android:id="@+id/horizontal_separator"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="15dp"
+        android:background="#CCCCCC"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/iv_case_image_from_list_exercises_in_session" />
+
+</RelativeLayout>

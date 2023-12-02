@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_minimalist_dark"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:id="@+id/view_head"
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+
+        <ImageView
+            android:id="@+id/iv_go_back_from_exercises_list"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/button_back_simple"
+            app:tint="@color/white" />
+
+        <EditText
+            android:id="@+id/et_edit_session_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="60dp"
+            android:layout_toEndOf="@+id/iv_go_back_from_exercises_list"
+            android:fontFamily="@font/inter_bold"
+            android:text="Modifications d'un\nexercice"
+            android:textColor="@color/white"
+            android:textSize="27dp"
+            android:textAlignment="center"
+            android:background="@android:color/transparent"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_background_name"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/view_head"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toStartOf="@+id/iv_background_type"
+        android:src="@drawable/minimalist_dark_background_for_element" />
+
+    <ImageView
+        android:id="@+id/iv_background_type"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/view_head"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/minimalist_dark_background_for_element" />
+
+    <EditText
+        android:id="@+id/tv_name_exo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/iv_background_name"
+        android:layout_alignTop="@+id/iv_background_name"
+        android:layout_alignEnd="@+id/iv_background_name"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/inter_bold"
+        android:background="@android:color/transparent"
+        android:text="Name_exo"
+        android:textColor="@color/white"
+        android:textSize="23dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_repetitions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/iv_backround_add_repetition"
+        android:layout_below="@+id/iv_background_name"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"/>
+
+    <ImageView
+        android:id="@+id/iv_backround_add_repetition"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/minimalist_dark_background_for_element" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_backround_add_repetition"
+        android:layout_alignBottom="@+id/iv_backround_add_repetition"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="0dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Add repetition"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:textAlignment="center"/>
+
+
+
+
+
+</RelativeLayout>

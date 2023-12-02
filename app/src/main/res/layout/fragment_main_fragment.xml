@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#6DD3CE">
+
+
+    <TextView
+        android:id="@+id/Home_training_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Home_training_case1_image"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="55sp"
+        android:layout_marginTop="120dp"
+        android:fontFamily="@font/extra_bold"
+        android:text="Training" />
+
+
+    <ImageView
+        android:id="@+id/Home_training_case1_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/Home_training_case2_image"
+        android:layout_marginStart="-10dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="24dp"
+        android:layout_toStartOf="@+id/Home_training_case2_image"
+        android:src="@drawable/home_training_case_image" />
+
+    <ImageView
+        android:id="@+id/Home_training_activity1_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+
+        android:layout_alignStart="@+id/Home_training_case1_image"
+        android:layout_alignTop="@+id/Home_training_case1_image"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="9dp"
+        android:src="@drawable/icon_like" />
+
+    <ImageView
+        android:id="@+id/Home_training_case2_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/home_training_case_image"
+        android:layout_marginTop="160dp"/>
+
+    <ImageView
+        android:id="@+id/Home_training_activity2_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignStart="@+id/Home_training_case2_image"
+        android:layout_alignTop="@+id/Home_training_case2_image"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="9dp"
+        android:src="@drawable/icon_haltere" />
+
+    <ImageView
+        android:id="@+id/Home_training_case3_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/Home_training_case2_image"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/Home_training_case2_image"
+        android:src="@drawable/home_training_case_image" />
+
+    <ImageView
+        android:id="@+id/Home_training_activity3_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignStart="@+id/Home_training_case3_image"
+        android:layout_alignTop="@+id/Home_training_case3_image"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="9dp"
+        android:src="@drawable/icon_traction" />
+
+    <TextView
+        android:id="@+id/Home_citations_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Home_training_case1_image"
+        android:layout_alignStart="@+id/Home_citations_case_image"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/extra_bold"
+        android:text="Citations" />
+
+    <ImageView
+        android:id="@+id/Home_citations_all_image"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_below="@+id/Home_training_case1_image"
+        android:layout_alignEnd="@+id/Home_citations_case_image"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="5dp"
+        android:layout_toEndOf="@+id/Home_citations_content_text"
+        android:fontFamily="@font/extra_bold"
+        android:src="@drawable/general_develop_all" />
+
+    <ImageView
+        android:id="@+id/Home_citations_case_image"
+        android:layout_width="320dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/Home_training_case2_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="-7dp"
+        android:layout_marginTop="59dp"
+        android:src="@drawable/home_citation_case_image" />
+
+    <TextView
+        android:id="@+id/Home_citations_content_text"
+        android:layout_width="278dp"
+        android:layout_height="100dp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/Home_citations_case_image"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="Je suis encore loin de mon objectif, mais j'en suis plus proche qu'hier" />
+
+
+
+    <ImageView
+        android:id="@+id/Home_graph_case_image"
+        android:layout_width="320dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/Home_citations_case_image"
+        android:layout_alignStart="@+id/Home_citations_case_image"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/home_citation_case_image" />
+
+
+
+</RelativeLayout>

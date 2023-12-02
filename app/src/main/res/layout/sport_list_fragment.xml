@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/background_training_fragment">
+
+
+
+    <ImageView
+        android:id="@+id/tv_title"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/training_title"/>
+
+
+    <ImageView
+        android:id="@+id/iv_background_search_sport"
+        android:layout_width="275dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tv_title"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="40dp"
+        android:src="@drawable/search_bar"
+        android:contentDescription="TODO" />
+
+
+    <ListView
+        android:id="@+id/liste"
+        android:layout_width="400dp"
+        android:layout_height="568dp"
+        android:layout_marginTop="150dp" />
+
+    <ImageView
+        android:id="@+id/add_liste_sport"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/iv_background_search_sport"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="-30dp"
+        android:layout_toStartOf="@+id/iv_background_search_sport"
+        android:src="@drawable/add"/>
+
+    <EditText
+        android:id="@+id/sport_list_fragment_search_sport"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_alignStart="@+id/iv_background_search_sport"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:fadeScrollbars="false"
+        android:fontFamily="@font/open_sans_bold"
+        android:hint="Recherche un sport"
+        android:inputType="text"
+        android:scrollbars="horizontal"
+        android:textColor="@color/primary_color"
+        android:textColorHint="@color/secondary_color"
+        android:textSize="20dp"/>
+
+
+</RelativeLayout>

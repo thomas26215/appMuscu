@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_minimalist_dark"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/case_head"
+            android:layout_width="match_parent"
+            android:layout_height="75dp">
+
+            <ImageView
+                android:id="@+id/iv_go_back_from_exrcises_list"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/button_back_simple"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_launch_session"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Lancer une session"
+                android:textSize="27dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/inter_bold"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/tv_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/inter_bold"
+                android:text="edit"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/tv_session_name_from_display_of_exercises_of_workout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/case_head"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="-70dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="name_session"
+            android:textColor="@color/white"
+            android:textSize="23dp" />
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/affichage_activities_list_activities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/launch_session_from_display_of_exercises_of_workout"
+            android:layout_below="@+id/tv_session_name_from_display_of_exercises_of_workout"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="150dp" />
+
+
+        <ImageView
+            android:id="@+id/iv_add_exercise"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/affichage_activities_list_activities"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-90dp"
+            android:src="@drawable/minimalist_dark_background_for_element" />
+
+        <TextView
+            android:id="@+id/tv_add_exercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_add_exercise"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="Ajouter"
+            android:textColor="@color/white"
+            android:textSize="23dp" />
+
+        <ImageView
+            android:id="@+id/launch_session_from_display_of_exercises_of_workout"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/minimalist_dark_background_for_element"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/launch_session_from_display_of_exercises_of_workout"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/inter_bold"
+            android:text="Lancer une session"
+            android:textColor="@color/white"
+            android:textSize="23dp" />
+
+
+    </RelativeLayout>
+
+
+
+
+</ScrollView>

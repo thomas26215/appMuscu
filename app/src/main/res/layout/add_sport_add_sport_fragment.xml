@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add_sport.AddSportAddSportFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_marginTop="200dp"
+        >
+
+
+        <FrameLayout
+            android:id="@+id/add_sport_add_sport_reps_time_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="420dp"
+            android:layout_marginTop="0dp"
+            />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/add_sport_add_sport_sport_added_notification_background"
+            android:layout_width="300dp"
+            android:layout_height="65dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="000dp"
+            android:src="@drawable/add_name_sport_bar_image"
+            android:elevation="100dp"
+            />
+
+        <EditText
+            android:id="@+id/iv_create_name_exercise"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#000000"
+            android:hint="Entrez un nom"
+            android:focusableInTouchMode="true"
+
+            android:typeface="sans"
+            android:fontFamily="@font/inter_bold" />
+
+        <ImageView
+            android:id="@+id/iv_change_exercise"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/iv_create_name_exercise"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/iv_create_name_exercise"
+            android:src="@drawable/minimalist_dark_background_for_element" />
+
+        <TextView
+            android:id="@+id/tv_add_name_for_exercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_create_name_exercise"
+            android:layout_alignStart="@+id/iv_create_name_exercise"
+            android:layout_marginStart="3dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="Nom"
+            android:textColor="#000000"
+            android:textSize="22dp" />
+
+        <ImageView
+            android:id="@+id/iv_add_pause_for_exercise"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tv_add_name_for_exercise"
+            android:layout_alignStart="@+id/tv_add_name_for_exercise"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/cofee_break"/>
+
+        <TextView
+            android:id="@+id/tv_add_pause_for_exercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_add_pause_for_exercise"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="-3dp"
+            android:layout_toEndOf="@+id/iv_add_pause_for_exercise"
+            android:fontFamily="@font/inter_bold"
+            android:textColor="@color/primary_color"
+            android:text="Pause"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/tv_add_description_for_exercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_add_pause_for_exercise"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="+ Description"
+            android:textColor="@color/primary_color"
+            android:textSize="25dp" />
+
+        <ImageView
+            android:id="@+id/iv_background_for_add_description"
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/home_citation_case_image"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/et_add_description"
+            android:layout_width="370dp"
+            android:layout_height="130dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_alignStart="@+id/iv_background_for_add_description"
+            android:layout_alignTop="@+id/iv_background_for_add_description"
+            android:fontFamily="@font/open_sans_bold"
+            android:hint="Rentrez une description"
+            android:textAlignment="center"
+            android:visibility="invisible"/>
+
+
+        <ImageView
+            android:id="@+id/content_error_in_add_exercise"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/add_sport_add_sport_validation"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="0dp"
+            android:src="@drawable/error_ajouter_nom"
+            android:visibility="invisible"/>
+
+        <!-- Pause + recup -->
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+        <ImageView
+            android:id="@+id/iv_background_for_pause"
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:layout_above="@id/text_view"
+            android:layout_centerInParent="true"
+            android:src="@drawable/home_citation_case_image"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/et_add_pause"
+            android:layout_width="370dp"
+            android:layout_height="130dp"
+            android:layout_alignStart="@+id/iv_background_for_add_description"
+            android:layout_alignTop="@+id/iv_background_for_pause"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:hint="Ajouter une pause"
+            android:textAlignment="center"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/iv_background_for_recup"
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/text_view"
+            android:src="@drawable/home_citation_case_image"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/et_add_recup"
+            android:layout_width="370dp"
+            android:layout_height="130dp"
+            android:layout_alignStart="@+id/iv_background_for_add_description"
+            android:layout_alignTop="@+id/iv_background_for_recup"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:hint="Ajouter une récupération"
+            android:textAlignment="center"
+            android:visibility="invisible" />
+
+        <!-- Fin -->
+
+        <ImageView
+            android:id="@+id/add_sport_add_sport_validation"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_above="@+id/add_sport_add_sport_next"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="0dp"
+            android:src="@drawable/next_button_1" />
+
+        <ImageView
+            android:id="@+id/add_sport_add_sport_back"
+            android:layout_width="200dp"
+            android:layout_height="75dp"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/back_button_1" />
+
+        <ImageView
+            android:id="@+id/add_sport_add_sport_next"
+            android:layout_width="225dp"
+            android:layout_height="75dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="205dp"
+            android:src="@drawable/next_button_1" />
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

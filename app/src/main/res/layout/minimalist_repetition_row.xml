@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/background_minimalist_dark"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/iv_background_reps"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/minimalist_dark_background_for_element"
+        android:layout_centerVertical="true"/>
+
+    <EditText
+        android:id="@+id/et_reps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/iv_background_reps"
+        android:layout_alignTop="@+id/iv_background_reps"
+        android:layout_alignEnd="@+id/iv_background_reps"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/inter_bold"
+        android:textSize="23dp"
+        android:textColor="@color/white"
+
+        android:textColorHint="@color/white"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/tv_reps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/iv_background_reps"
+        android:fontFamily="@font/inter_bold"
+        android:text="Reps"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_centerVertical="true"/>
+
+
+    <ImageView
+        android:id="@+id/iv_background_charge"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/tv_reps"
+        android:src="@drawable/minimalist_dark_background_for_element" />
+
+    <EditText
+        android:id="@+id/et_charge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/iv_background_charge"
+        android:layout_alignTop="@+id/iv_background_charge"
+        android:layout_alignEnd="@+id/iv_background_charge"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/inter_bold"
+        android:textSize="23dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/tv_charge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/iv_background_charge"
+        android:fontFamily="@font/inter_bold"
+        android:text="Kg"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_centerVertical="true"/>
+
+    <ImageView
+        android:id="@+id/iv_background_time"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/minimalist_dark_background_for_element"
+        android:layout_centerVertical="true"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/et_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/iv_background_time"
+        android:layout_alignTop="@+id/iv_background_time"
+        android:layout_alignEnd="@+id/iv_background_time"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/inter_bold"
+        android:hint="Time"
+        android:textSize="23dp"
+        android:textColor="@color/white"
+
+        android:textColorHint="@color/white"
+        android:textAlignment="center"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_secondes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/iv_background_time"
+        android:fontFamily="@font/inter_bold"
+        android:text="Secondes"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:visibility="gone"/>
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_delete"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="15dp"
+        android:layout_toStartOf="@+id/rl_confirm">
+
+        <ImageView
+            android:id="@+id/iv_background_delete"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/minimalist_dark_background_for_element"
+            app:tint="@color/red"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/red_bin"
+            app:tint="@color/white"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_confirm"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="20dp">
+
+        <ImageView
+            android:id="@+id/iv_background_confirm"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/minimalist_dark_background_for_element"
+            app:tint="@color/green"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/tick"
+            app:tint="@color/white"/>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

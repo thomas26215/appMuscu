@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv_pause"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/inter_bold"
+        android:text="recuperation"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="22dp" />
+
+    <TextView
+        android:id="@+id/tv_conseil"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/tv_pause"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Conseil"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/tv_time_remaining"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+
+
+        android:layout_below="@+id/tv_pause"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+
+        android:fontFamily="@font/inter_bold"
+        android:text="57"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="100dp" />
+
+
+    <ImageView
+        android:id="@+id/iv_spinner_head"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tv_time_remaining"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+
+        android:src="@drawable/rounded_corner_drawable"/>
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/iv_spinner_head"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/rounded_corner_drawable" />
+
+
+
+    <LinearLayout
+        android:id="@+id/points_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_time_remaining"
+        android:layout_marginBottom="-300dp"
+        android:gravity="center"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_complete_button_from_pause_workout"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/points_layout"
+        android:layout_marginTop="320dp"
+        android:src="@drawable/button_complete"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
+

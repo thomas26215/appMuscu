@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/training_case_background_image"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:src="@drawable/liste_sports_case_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/training_case_training_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        android:text="name of sport"
+        android:textSize="20dp"
+        android:fontFamily="@font/open_sans_bold"
+        app:layout_constraintStart_toStartOf="@+id/training_case_background_image"
+        app:layout_constraintTop_toTopOf="@+id/training_case_background_image" />
+
+    <TextView
+        android:id="@+id/training_case_time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="60min"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:fontFamily="@font/open_sans_bold"
+        app:layout_constraintStart_toStartOf="@+id/training_case_training_text"
+        app:layout_constraintTop_toBottomOf="@+id/training_case_training_text"
+        android:layout_marginTop="7dp"
+        android:layout_marginStart="35dp"/>
+
+    <TextView
+        android:id="@+id/training_case_number_exercises_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="5 test"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+
+        app:layout_constraintEnd_toEndOf="@+id/training_case_background_image"
+        app:layout_constraintTop_toTopOf="@+id/training_case_training_text" />
+
+    <TextView
+        android:id="@+id/training_case_number_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="+50 points"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/training_case_number_exercises_text"
+        app:layout_constraintTop_toTopOf="@+id/training_case_time_text" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

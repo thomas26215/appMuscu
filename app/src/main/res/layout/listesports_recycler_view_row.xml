@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/training_case_background_image"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="55dp"
+        android:src="@drawable/liste_sports_case_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/training_case_activity_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/icon_traction"
+        app:layout_constraintStart_toStartOf="@+id/training_case_background_image"
+        app:layout_constraintTop_toTopOf="@+id/training_case_background_image"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="40dp"/>
+
+    <TextView
+        android:id="@+id/training_case_training_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="20dp"
+        android:text="Cardio"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/training_case_background_image"
+        app:layout_constraintTop_toTopOf="@+id/training_case_background_image" />
+
+    <TextView
+        android:id="@+id/training_case_time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="45min"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/training_case_training_text"
+        app:layout_constraintTop_toBottomOf="@+id/training_case_training_text"
+        android:layout_marginTop="15dp"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

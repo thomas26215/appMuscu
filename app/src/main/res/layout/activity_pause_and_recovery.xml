@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_minimalist_dark"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/case_head"
+            android:layout_width="match_parent"
+            android:layout_height="75dp">
+
+            <ImageView
+                android:id="@+id/iv_go_back_from_exrcises_list"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/button_back_simple"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_launch_session"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Ajouter une pause"
+                android:textSize="27dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/inter_bold"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAlignment="center"/>
+        </RelativeLayout>
+
+
+        <GridView
+            android:id="@+id/pre_timers"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_below="@+id/case_head"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="20dp"
+            android:numColumns="3"
+            android:stretchMode="columnWidth" />
+
+        <ImageView
+            android:id="@+id/iv_background_ajouter"
+            android:layout_width="175dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/pre_timers"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/minimalist_dark_background_for_element" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_background_ajouter"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/inter_bold"
+            android:text="Ajouter"
+            android:textColor="@color/white"
+            android:textSize="27dp" />
+
+
+        <ImageView
+            android:id="@+id/iv_background_minutes"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/iv_background_reinitialiser"
+            android:layout_marginBottom="25dp"
+            android:layout_marginEnd="20dp"
+            android:layout_toStartOf="@+id/tv_deux_points"
+            android:src="@drawable/minimalist_dark_background_for_element" />
+
+        <EditText
+            android:id="@+id/tv_minutes_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/iv_background_minutes"
+            android:layout_alignTop="@+id/iv_background_minutes"
+            android:layout_alignEnd="@+id/iv_background_minutes"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="5"
+            android:textColor="@color/white"
+            android:textSize="27dp"
+            android:textAlignment="center"
+            android:inputType="number"/>
+
+        <TextView
+            android:id="@+id/tv_deux_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/iv_background_reinitialiser"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="35dp"
+            android:fontFamily="@font/inter_bold"
+            android:text=":"
+            android:textColor="@color/white"
+            android:textSize="27dp" />
+
+        <ImageView
+            android:id="@+id/iv_background_secondes"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/iv_background_reinitialiser"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="25dp"
+            android:layout_toEndOf="@+id/tv_deux_points"
+            android:src="@drawable/minimalist_dark_background_for_element" />
+
+        <EditText
+            android:id="@+id/tv_secondes_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/iv_background_secondes"
+            android:layout_alignTop="@+id/iv_background_secondes"
+            android:layout_alignEnd="@+id/iv_background_secondes"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="5"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="27dp"
+            android:inputType="number"/>
+
+        <ImageView
+            android:id="@+id/iv_background_reinitialiser"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginBottom="100dp"
+            app:tint="@color/red"
+            android:src="@drawable/minimalist_dark_background_for_element" />
+
+        <TextView
+            android:id="@+id/tv_reinitialiser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_background_reinitialiser"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="Réinitialiser"
+            android:textColor="@color/white"
+            android:textSize="28dp"
+            android:layout_centerHorizontal="true"/>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</ScrollView>

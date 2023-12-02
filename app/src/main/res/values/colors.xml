@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_opak">#CBEFF1F5</color>
+
+    <color name="background_home_fragment">#6DD3CE</color>
+    <color name="background_training_fragment">#F0A868</color>
+    <color name="background_statistics_fragment">#DDBDD5</color>
+    <color name="background_parameters_fragment">#2A2D34</color>
+
+    <color name="background_home_button">#326DD3CE</color>
+    <color name="background_training_button">#32F0A868</color>
+    <color name="background_statistics_button">#32DDBDD5</color>
+    <color name="background_parameters_button">#342A2D34</color>
+
+    <!-- Les couleurs principales -->
+
+    <color name="primary_color">#586F6B</color>
+    <color name="secondary_color">#3D2C2E</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="black_semi_transparent">#80000000</color>
+    <color name="red">#DC493A</color>
+    <color name="green">#9AD2CB</color>
+
+    <!-- Couleur pour minimaliste dark -->
+
+    <color name="background_minimalist_dark">#091F44</color>
+    <color name="background_elements_minimalist_dark">#223B65</color>
+
+    <!-- Couleurs pour les fonds -->
+
+    <color name="background_white_theme">#90EFF1F5</color>
+
+    <!-- Autres couleurs -->
+
+    <color name="bleu_pastel">#AEC5EB</color>
+    <color name="orange_corail">#FF784F</color>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorPrimaryLight">#BB86FC</color>
+
+</resources>

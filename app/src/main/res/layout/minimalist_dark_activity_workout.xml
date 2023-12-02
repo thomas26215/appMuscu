@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:background="@color/background_minimalist_dark"
+android:fillViewport="true">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_session"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/inter_bold"
+        android:text="Session"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <FrameLayout
+        android:id="@+id/workoutFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_session"
+        android:layout_marginTop="0dp"
+        android:clipChildren="false"/>
+
+
+</RelativeLayout>
+
+
+</ScrollView>

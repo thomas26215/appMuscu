@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+    android:background="@color/background_white_theme">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:fitsSystemWindows="true"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+
+        <ImageView
+            android:id="@+id/iv_go_back_from_exrcises_list"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/button_back_simple" />
+
+        <TextView
+            android:id="@+id/launch_workout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/inter_bold"
+            android:text="Lancer une \n activité"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/tv_session_name_from_display_of_exercises_of_workout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/launch_workout"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="Nom de la séance"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:layout_marginTop="50dp"/>
+
+        <ListView
+            android:id="@+id/affichage_activities_list_activities"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_session_name_from_display_of_exercises_of_workout"
+            android:layout_marginTop="15dp"
+            android:divider="@android:color/transparent"
+            android:visibility="invisible"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/affichage_activities_list_activitiesRV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_session_name_from_display_of_exercises_of_workout"
+            android:layout_marginTop="15dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/affichage_activities_view_row" />
+
+        <ImageView
+            android:id="@+id/launch_session_from_display_of_exercises_of_workout"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:src="@drawable/button_lancer_une_session"
+            android:layout_centerHorizontal="true"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

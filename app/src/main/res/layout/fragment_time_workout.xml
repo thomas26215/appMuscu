@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_minimalist_dark"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_workout_name_from_rep_session"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="exo_name"
+            android:textColor="@color/white"
+            android:fontFamily="@font/inter_bold"
+            android:textSize="25dp"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:id="@+id/iv_back_affichage_elements"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/tv_workout_name_from_rep_session"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/minimalist_dark_background_for_element"/>
+
+        <TextView
+            android:id="@+id/tv_repetitions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_back_affichage_elements"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="repetitions"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/tv_series"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_back_affichage_elements"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="21dp"
+            android:layout_toStartOf="@+id/tv_repetitions"
+            android:fontFamily="@font/inter_bold"
+            android:text="series"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_back_affichage_elements"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:layout_toEndOf="@+id/tv_repetitions"
+            android:fontFamily="@font/inter_bold"
+            android:text="temps"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/tv_repetitions_from_rep_session"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_back_affichage_elements"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="15"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/tv_series_from_rep_session"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tv_series"
+            android:layout_alignTop="@+id/iv_back_affichage_elements"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="4/5"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/tv_time_from_rep_session"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/time"
+            android:layout_alignTop="@+id/iv_back_affichage_elements"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="24:00"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <ImageView
+            android:id="@+id/iv_image_trained_muscles"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_below="@+id/iv_back_affichage_elements"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/exemple_image_for_targeted_muscle"/>
+
+        <TextView
+            android:id="@+id/tv_description_from_reps_session"
+            android:layout_width="300dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/iv_image_trained_muscles"
+            android:layout_marginTop="20dp"
+            android:text="Description complète Description complète Description complète Description complète Description complète Description complète Description complète Description complète Description complète Description complète Description complète Description complète Description complète Description complète Description complète Description complète Description complète Description complète Description complète Description complète Description complète Description complète Description complète Description complète Description complète "
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/purple_smile"
+            android:textColor="@color/white"
+            android:textSize="17dp"/>
+
+        <ImageView
+            android:id="@+id/iv_fail_complete_from_reps_session"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tv_description_from_reps_session"
+            android:layout_marginTop="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="40dp"
+            android:src="@drawable/button_complete"/>
+
+        <ImageView
+            android:id="@+id/iv_fail_button_from_reps_session"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tv_description_from_reps_session"
+            android:layout_marginTop="40dp"
+
+            android:layout_marginStart="40dp"
+            android:src="@drawable/button_fail"/>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>
